@@ -1,0 +1,12 @@
+services:
+  pdftoppm:
+    build:
+      context: ./docker/pdftoppm
+      dockerfile: Dockerfile
+    image: receipt-poppler
+
+  tesseract:
+    build:
+      context: ./docker/tesseract
+      dockerfile: Dockerfile
+    image: receipt-tesseract
